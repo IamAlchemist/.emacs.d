@@ -1,0 +1,128 @@
+cd auto-complete-clang/
+ls
+pwd
+echo "" | clang++ -v -x c++ -E -
+clang -o test test.c 
+ls
+test
+./test 
+clang++ -o test test.cpp 
+./test 
+clang++ -o test test.cpp 
+./test 
+clang++ -o test test.cpp 
+./test 
+clang++ -o test test.cpp 
+clang++ -o test test.cpp 
+clang++ -o test test.cpp 
+clang++ -o test test.cpp 
+./test 
+curl --help
+cd /usr/local/
+find Celler
+ls
+find Cellar
+ls Cellar/
+brew --help
+cd ~/.emacs.d/
+rm -rf ../.emacs.d_backup/
+ls
+cd ..
+ls
+ls /usr/local/Cellar/
+ls /usr/local/Cellar/pkg-config/
+ls /usr/local/Cellar/pkg-config/0.28/
+ls /usr/local/Cellar/llvm/
+ls /usr/local/Cellar/llvm/3.3/
+brew search wget
+ls /usr/local/Cellar/
+ls /usr/local/Library/
+ls /usr/local/Library/Formula/
+cd .emacs.d/plugins/yasnippet/
+ls
+cd snippets/
+ls
+find . -name inc
+cd cc-mode/
+ls
+cat inc
+cat inc.l
+cat inc.1
+cd ..
+find . -name for
+cd cc-mode/
+ls
+cat for
+ls -l 
+ls
+cat if
+cat ifdef 
+cat do
+cat main
+cat math 
+cat stru
+cat struct 
+ls
+cat while 
+cat typedef 
+cd ..
+find . -name class
+cd c++-mode/
+ls
+cat class 
+ls
+cd ../plugins/
+ls
+cd yasnippet/
+ls
+cd snippets/
+ls
+cd cc-mode/
+ls
+cat while 
+cd ..
+cd plugins/
+cd yasnippet/snippets/
+cd cc-mode/
+cd .emacs.d/
+cd plugins/
+ls
+cd color-theme-6.6.0/
+ls
+ls
+ls
+cd ..
+ls
+date
+date
+date
+date
+date
+git --help
+git --version
+git help -a
+date
+ls
+ls
+ls *.h
+ls
+cd ~
+ls
+cd Dropbox/
+ls
+ls *.txt
+more daily.txt 
+ls
+ls
+ls
+ls
+ls
+dir *.txt
+ls *.txt
+cd Wizard/
+ls
+cd ..
+cd ..
+find . -name "*.h" | wc -l
+find . -name "*.cpp" | wc -l
+date
