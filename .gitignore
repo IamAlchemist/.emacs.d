@@ -1,3 +1,4 @@
-.[oa]
-~
+*.[oa]
+*~
+*.elc
 ac-comphist.dat
