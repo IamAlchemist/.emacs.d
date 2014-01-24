@@ -1,72 +1,3 @@
-cd auto-complete-clang/
-ls
-pwd
-echo "" | clang++ -v -x c++ -E -
-clang -o test test.c 
-ls
-test
-./test 
-clang++ -o test test.cpp 
-./test 
-clang++ -o test test.cpp 
-./test 
-clang++ -o test test.cpp 
-./test 
-clang++ -o test test.cpp 
-clang++ -o test test.cpp 
-clang++ -o test test.cpp 
-clang++ -o test test.cpp 
-./test 
-curl --help
-cd /usr/local/
-find Celler
-ls
-find Cellar
-ls Cellar/
-brew --help
-cd ~/.emacs.d/
-rm -rf ../.emacs.d_backup/
-ls
-cd ..
-ls
-ls /usr/local/Cellar/
-ls /usr/local/Cellar/pkg-config/
-ls /usr/local/Cellar/pkg-config/0.28/
-ls /usr/local/Cellar/llvm/
-ls /usr/local/Cellar/llvm/3.3/
-brew search wget
-ls /usr/local/Cellar/
-ls /usr/local/Library/
-ls /usr/local/Library/Formula/
-cd .emacs.d/plugins/yasnippet/
-ls
-cd snippets/
-ls
-find . -name inc
-cd cc-mode/
-ls
-cat inc
-cat inc.l
-cat inc.1
-cd ..
-find . -name for
-cd cc-mode/
-ls
-cat for
-ls -l 
-ls
-cat if
-cat ifdef 
-cat do
-cat main
-cat math 
-cat stru
-cat struct 
-ls
-cat while 
-cat typedef 
-cd ..
-find . -name class
 cd c++-mode/
 ls
 cat class 
@@ -126,3 +57,72 @@ cd ..
 find . -name "*.h" | wc -l
 find . -name "*.cpp" | wc -l
 date
+pwd
+cd c:/GitHub/
+ls
+cd cppcheck/
+ls
+ls
+git pull
+find . -name "testmemleak.cpp" | xargs grep -i -E "::findleak\("
+cd ..
+cd tspy/
+cd ..
+cd cppcheck/
+find . -name ".git*"
+find . -name ".git"
+cd ~
+pwd
+ls
+ls -a .emacs_backup/
+ls -a .emacs
+cat .emacs
+cp c:/GitHub/.emacs.d/.emacs ~
+ls
+rm -rf temp.cpp
+rm -rf temp.c
+ls
+grep
+find .
+cd c:/GitHub/
+cd cppcheck/
+ls
+cd lib
+find . *.cpp
+find . -name "*.cpp" | xargs grep -i -E "scope\([^)]"
+find . -name "*.cpp"
+find . "*.cpp"
+find . "*.cpp" | xargs grep -i -E "scope\([^)]"
+find . "*.cpp" | xargs grep -E "scope\([^)]"
+cp .emacs c:/GitHub/.emacs.d/
+cat c:/GitHub/.emacs.d/.emacs 
+cd c:/GitHub/cppcheck/test/
+ls ts*
+rm tstestcheck.h
+find help
+which find
+find --hlep
+find --help
+find . "*.cpp"
+cd /c/
+cd /c
+cd c:/
+cd Program\ Files\ \(x86\)/
+cd behaviac/
+ls
+cd extension/
+dir
+ls
+cd behaviac/
+ls
+cd src/
+ls
+find . "*.cpp" | xargs grep -E "#define"
+find . "*.h" | xargs grep -E "#define"
+find . "*.h" | xargs grep -E "#define" > c:\temp.txt
+cd tools/
+cd ..
+cd test/
+grep -i -E "if" testnullpointer.cpp 
+grep -i -E "if[ ]?\(" testnullpointer.cpp 
+grep -i -E "if[ ]*\(" testnullpointer.cpp 
