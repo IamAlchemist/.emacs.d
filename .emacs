@@ -60,6 +60,10 @@
 	  '(lambda()
 	     (setq c-basic-offset 4)
 	     (c-set-style "stroustrup")))
+(add-hook 'c-mode-hook
+	  '(lambda()
+	     (setq c-basic-offset 4)
+	     (c-set-style "stroustrup")))
 	     
 (defun window-move-up (&optional arg)
 "Current window move-up 2 lines."
