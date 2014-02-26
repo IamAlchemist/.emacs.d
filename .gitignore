@@ -1,4 +1,5 @@
-*ac-comphist.dat
+ac-comphist.dat
 *.[oa]
 *~
 *.elc
+eshell/*
