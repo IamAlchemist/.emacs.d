@@ -24,6 +24,13 @@
 (color-theme-initialize)
 (color-theme-hober)
 
+(add-to-list 'load-path "~/.emacs.d/plugins/mode")
+(autoload 'markdown-mode "markdown-mode")
+(add-to-list 'auto-mode-alist '("\\.\\'" . markdown-mode))
+(add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
+(add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
+
+
 (eval-after-load "color-theme"
   '(progn
      (color-theme-initialize)
