@@ -30,6 +30,11 @@
 (add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
 
+(autoload 'actionscript-mode "actionscript-mode" "Major mode for actionscript." t)
+(add-to-list 'auto-mode-alist '("\\.as$" . actionscript-mode))
+
+(eval-after-load "actionscript-mode" '(load "actionscript-config"))
+(add-hook 'actionscript-mode-hood 'hs-minor-mode)
 
 (eval-after-load "color-theme"
   '(progn
