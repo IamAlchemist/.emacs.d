@@ -18,6 +18,7 @@
 (require 'auto-complete-config)
 (add-to-list 'ac-dictionary-directories "~/.emacs.d//ac-dict")
 (ac-config-default)
+(eval-after-load "auto-complete" '(add-to-list 'ac-modes 'lua-mode))
 
 (add-to-list 'load-path "~/.emacs.d/plugins/color-theme-6.6.0")
 (require 'color-theme)
@@ -25,6 +26,8 @@
 (color-theme-hober)
 
 (add-to-list 'load-path "~/.emacs.d/plugins/mode")
+(require 'php-mode)
+
 (autoload 'markdown-mode "markdown-mode")
 (add-to-list 'auto-mode-alist '("\\.\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
