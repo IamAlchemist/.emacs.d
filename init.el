@@ -6,6 +6,8 @@
 (global-set-key (kbd "C-x C-k") 'kill-region)
 (global-set-key (kbd "C-c C-k") 'kill-region)
 
+;;(global-set-key (kbd "qrr") 'query-replace-regexp)
+
 (add-to-list 'load-path "~/.emacs.d/lisp")
 
 (autoload 'markdown-mode "markdown-mode"
