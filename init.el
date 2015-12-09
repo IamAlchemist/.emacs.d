@@ -1,3 +1,5 @@
+(add-to-list 'load-path "~/.emacs.d/lisp")
+
 (setq backup-directory-alist '(("."."~/.emacs_backup")))
 
 (global-set-key (kbd "C-x C-m") 'execute-extended-command)
@@ -6,16 +8,14 @@
 (global-set-key (kbd "C-x C-k") 'kill-region)
 (global-set-key (kbd "C-c C-k") 'kill-region)
 
-;;(global-set-key (kbd "qrr") 'query-replace-regexp)
+;; (global-set-key (kbd "qrr") 'query-replace-regexp)
 
-(add-to-list 'load-path "~/.emacs.d/lisp")
 
 (autoload 'markdown-mode "markdown-mode"
   "Major mode for editing Markdown files" t)
 (add-to-list 'auto-mode-alist '("\\.text\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
-
 
 
 (custom-set-variables
@@ -35,3 +35,15 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+
+(require 'auto-install)
+(setq auto-install-directory "~/.emacs.d/auto-install/")
+(auto-install-compatibility-setup)
+
+(add-hook 'cperl-mode-hook
+          (lambda()
+            (require 'perl-completion)
+            (perl-completion-mode t)))
+
+(ido-mode t)
