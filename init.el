@@ -19,10 +19,6 @@
 
 
 (custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
  '(tool-bar-mode nil)
  '(menu-bar-mode nil)
  '(scroll-bar-mode nil)
@@ -30,20 +26,26 @@
 
 
 (custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
  )
 
 
 (require 'auto-install)
+(add-to-list 'load-path "~/.emacs.d/auto-install")
 (setq auto-install-directory "~/.emacs.d/auto-install/")
 (auto-install-compatibility-setup)
 
+(defalias 'perl-mode 'cperl-mode)
 (add-hook 'cperl-mode-hook
           (lambda()
             (require 'perl-completion)
             (perl-completion-mode t)))
 
 (ido-mode t)
+
+;; packages
+(setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")
+                         ("melpa" . "https://melpa.org/packages/")))
+
+(add-to-list 'load-path "~/.emacs.d/auto-complete/1.5")
+(require 'auto-complete-config)
+(ac-config-default)
