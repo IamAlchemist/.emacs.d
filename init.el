@@ -4,6 +4,7 @@
 (global-set-key (kbd "C-x C-k") 'kill-region)
 (global-set-key (kbd "C-c C-k") 'kill-region)
 (global-set-key (kbd "C--") 'undo)
+(global-set-key (kbd "s-/") 'comment-dwim)
 ;; (global-set-key (kbd "qrr") 'query-replace-regexp)
 
 (setq backup-directory-alist '(("."."~/.emacs_backup")))
