@@ -3,6 +3,11 @@
 (global-set-key (kbd "C-w") 'backward-kill-word)
 (global-set-key (kbd "C-x C-k") 'kill-region)
 (global-set-key (kbd "C-c C-k") 'kill-region)
+
+(set-terminal-coding-system 'utf-8)
+(set-keyboard-coding-system 'utf-8)
+(prefer-coding-system 'utf-8)
+
 ;; (global-set-key (kbd "qrr") 'query-replace-regexp)
 
 (setq backup-directory-alist '(("."."~/.emacs_backup")))
