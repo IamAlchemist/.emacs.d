@@ -8,6 +8,9 @@
 (set-keyboard-coding-system 'utf-8)
 (prefer-coding-system 'utf-8)
 
+(global-set-key (kbd "C--") 'undo)
+(global-set-key (kbd "s-/") 'comment-dwim)
+
 ;; (global-set-key (kbd "qrr") 'query-replace-regexp)
 
 (setq backup-directory-alist '(("."."~/.emacs_backup")))
