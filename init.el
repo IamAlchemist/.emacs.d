@@ -11,17 +11,31 @@
 (global-set-key (kbd "C--") 'undo)
 (global-set-key (kbd "s-/") 'comment-dwim)
 
-;; (global-set-key (kbd "qrr") 'query-replace-regexp)
+(global-set-key "C-cl" 'org-store-link)
+(global-set-key "C-ca" 'org-agenda)
+(global-set-key "C-cc" 'org-capture)
+(global-set-key "C-cb" 'org-iswitchb)
+
+(global-set-key (kbd "qrr") 'query-replace-regexp)
 
 (setq backup-directory-alist '(("."."~/.emacs_backup")))
 
 (custom-set-variables
- '(tool-bar-mode nil)
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
  '(menu-bar-mode nil)
+ '(package-selected-packages (quote (markdown-mode auto-complete)))
  '(scroll-bar-mode nil)
+ '(tool-bar-mode nil)
  '(tooltip-mode nil))
 
 (custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
  )
 
 (ido-mode t)
@@ -31,6 +45,7 @@
 (setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")
                          ("melpa" . "https://melpa.org/packages/")))
 (require 'package)
+(add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/") t)
 (package-initialize)
 
 ;; markdown
