@@ -3,6 +3,7 @@
 (global-set-key (kbd "C-w") 'backward-kill-word)
 (global-set-key (kbd "C-x C-k") 'kill-region)
 (global-set-key (kbd "C-c C-k") 'kill-region)
+;; (global-set-key (kbd "qrr") 'query-replace-regexp) 
 
 (set-terminal-coding-system 'utf-8)
 (set-keyboard-coding-system 'utf-8)
@@ -11,12 +12,12 @@
 (global-set-key (kbd "C--") 'undo)
 (global-set-key (kbd "s-/") 'comment-dwim)
 
-(global-set-key "C-cl" 'org-store-link)
-(global-set-key "C-ca" 'org-agenda)
-(global-set-key "C-cc" 'org-capture)
-(global-set-key "C-cb" 'org-iswitchb)
+(global-set-key "\C-cl" 'org-store-link)
+(global-set-key "\C-ca" 'org-agenda)
+(global-set-key "\C-cc" 'org-capture)
+(global-set-key "\C-cb" 'org-iswitchb)
 
-(global-set-key (kbd "qrr") 'query-replace-regexp)
+
 
 (setq backup-directory-alist '(("."."~/.emacs_backup")))
 
