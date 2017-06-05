@@ -17,7 +17,7 @@
 (global-set-key "\C-cc" 'org-capture)
 (global-set-key "\C-cb" 'org-iswitchb)
 
-
+(global-set-key (kbd "M-p") 'ace-window)
 
 (setq backup-directory-alist '(("."."~/.emacs_backup")))
 
