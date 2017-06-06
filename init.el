@@ -3,7 +3,7 @@
 (global-set-key (kbd "C-w") 'backward-kill-word)
 (global-set-key (kbd "C-x C-k") 'kill-region)
 (global-set-key (kbd "C-c C-k") 'kill-region)
-(global-set-key (kbd "qrr") 'query-replace-regexp)
+;; (global-set-key (kbd "qrr") 'query-replace-regexp)
 
 (global-set-key (kbd "C--") 'undo)
 (global-set-key (kbd "s-/") 'comment-dwim)
