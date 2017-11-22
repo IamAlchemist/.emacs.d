@@ -3,7 +3,7 @@
 (global-set-key (kbd "C-w") 'backward-kill-word)
 (global-set-key (kbd "C-x C-k") 'kill-region)
 (global-set-key (kbd "C-c C-k") 'kill-region)
-(global-set-key (kbd "qrr") 'query-replace-regexp)
+;;(global-set-key (kbd "qrr") 'query-replace-regexp)
 
 (global-set-key (kbd "C--") 'undo)
 (global-set-key (kbd "s-/") 'comment-dwim)
@@ -24,8 +24,13 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(custom-safe-themes
+   (quote
+    ("a8245b7cc985a0610d71f9852e9f2767ad1b852c2bdea6f4aadc12cce9c4d6d0" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" default)))
  '(menu-bar-mode nil)
- '(package-selected-packages (quote (ace-window markdown-mode auto-complete)))
+ '(package-selected-packages
+   (quote
+    (color-theme-sanityinc-solarized solarized-theme ace-window markdown-mode auto-complete)))
  '(scroll-bar-mode nil)
  '(tool-bar-mode nil)
  '(tooltip-mode nil))
@@ -37,6 +42,10 @@
  ;; If there is more than one, they won't work right.
  )
 
+(add-to-list 'load-path "~/.emacs.d/lisp")
+(require 'color-theme)
+(add-to-list 'custom-theme-load-path "~/.emacs.d/lisp/themes")
+
 (setq backup-directory-alist '(("."."~/.emacs_backup")))
 (setq system-uses-terminfo nil)
 
@@ -46,10 +55,13 @@
 ;; packages
 ;; (setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")
 ;;                          ("melpa" . "https://melpa.org/packages/")))
-(setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")))
 (require 'package)
-(add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/") t)
+(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
+;; (setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")))
+;; (require 'package)
+;; (add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/") t)
 (package-initialize)
+(require 'dash)
 
 ;; markdown
 (autoload 'markdown-mode "markdown-mode"
