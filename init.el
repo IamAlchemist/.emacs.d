@@ -25,7 +25,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(menu-bar-mode nil)
- '(package-selected-packages (quote (ace-window markdown-mode auto-complete)))
+ '(package-selected-packages (quote (json-mode ace-window markdown-mode auto-complete)))
  '(scroll-bar-mode nil)
  '(tool-bar-mode nil)
  '(tooltip-mode nil))
@@ -57,6 +57,21 @@
 (add-to-list 'auto-mode-alist '("\\.text\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
+
+;; org mode
+(setq org-startup-indented t)
+
+;; octave-mode
+;; (autoload 'octave-mode "octave-mod" nil t)
+;; (setq auto-mode-alist
+;;       (cons '("\\.m$" . octave-mode) auto-mode-alist))
+
+;; (add-hook 'octave-mode-hook
+;;           (lambda ()
+;;             (abbrev-mode 1)
+;;             (auto-fill-mode 1)
+;;             (if (eq window-system 'x)
+;;                 (font-lock-mode 1))))
 
 ;; (defalias 'perl-mode 'cperl-mode)
 ;; (add-hook 'cperl-mode-hook
