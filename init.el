@@ -34,8 +34,9 @@
    (quote
     (color-theme-sanityinc-solarized solarized-theme json-mode ace-window markdown-mode auto-complete)))
  '(scroll-bar-mode nil)
- '(tool-bar-mode nil)
- '(tooltip-mode nil))
+ '(tool-bar-mode nil)			
+ '(tooltip-mode nil)
+ )
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
